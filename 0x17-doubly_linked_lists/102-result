@@ -1,2 +1,8 @@
-906609 = 913 × 992 + 913
+Input  : n = 2
+Output : 9009 
+9009 is the largest number which is product of two 
+2-digit numbers. 9009 = 91*99.
+
+Input : n = 3
+Output : 906609
 
