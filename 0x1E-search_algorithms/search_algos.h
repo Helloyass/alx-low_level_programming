@@ -1,42 +1,44 @@
-#ifndef _SORTING_ALGOS_H_
-#define _SORTING_ALGOS_H_
-
-#include <stdlib.h>
+#ifndef SEARCH_ALGOS_H
+#define SEARCH_ALGOS_H
 #include <stdio.h>
 
 /**
- * struct listint_s - singly linked list
+ * struct listint_s - Singly linked list.
+ * @n: Integer stored at the node.
+ * @index: Index of the node in the list.
+ * @next: Pointer to the next node.
  *
- * @n: Integer
- * @index: Index of the node in the list
- * @next: Pointer to the next node
- *
- * Description: singly linked list node structure
- * for Holberton project
+ * Description: Singly linked list node structure.
  */
+
 typedef struct listint_s
 {
+	/* Integer stored at the node. */
 	int n;
+	/* Index of the node in the list. */
 	size_t index;
+	/* Pointer to the next node. */
 	struct listint_s *next;
 } listint_t;
 
 /**
- * struct skiplist_s - Singly linked list with an express lane
+ * struct skiplist_s - Singly linked list with an express lane.
+ * @n: Integer stored at the node.
+ * @index: Index of the node in the list.
+ * @next: Pointer to the next node.
+ * @express: Pointer to the next node in the express lane.
  *
- * @n: Integer
- * @index: Index of the node in the list
- * @next: Pointer to the next node
- * @express: Pointer to the next node in the express lane
- *
- * Description: singly linked list node structure with an express lane
- * for Holberton project
+ * Description: Singly linked list node structure with an express lane.
  */
 typedef struct skiplist_s
 {
+	/* Integer stored at the node. */
 	int n;
+	/* Index of the node in the list. */
 	size_t index;
+	/* Pointer to the next node. */
 	struct skiplist_s *next;
+	/* Pointer to the next node in the express lane. */
 	struct skiplist_s *express;
 } skiplist_t;
 
